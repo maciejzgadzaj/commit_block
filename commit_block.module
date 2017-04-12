@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * The module file for commit_block module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function commit_block_theme() {
+  return array(
+    'commit_block_commit' => array(
+      'variables' => [
+        'commit' => NULL,
+      ],
+      'template' => 'commit-block-commit',
+    ),
+  );
+}

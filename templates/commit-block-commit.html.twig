@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a commit.
+ *
+ * Available variables:
+ * - commit: The entire data array returned from the request.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="commit">
+    <div class="commit-source">{{ commit.source }}</div>
+    <div class="commit-project">{{ commit.project }}</div>
+    <div class="commit-hash">{{ commit.hash }}</div>
+    <div class="commit-date">{{ commit.timestamp|format_date('short') }}</div>
+    <div class="commit-title">{{ commit.title}}</div>
+    <div class="commit-message">{{ commit.message}}</div>
+</div>

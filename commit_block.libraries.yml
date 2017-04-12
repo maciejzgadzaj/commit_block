@@ -1,0 +1,4 @@
+commit_block:
+  css:
+    theme:
+      css/block.css: {}
